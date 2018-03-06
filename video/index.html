@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VIDEO OF THE DAY</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>VIDEO OF THE DAY</h1>
+    <p>
+      WE have some funny videosa and pictures for you today! 
+    </p>
+<div class="sidenav">
+  <a href="#">MONDAY'S VIDEO OF THE DAY</a>
+  <a>TUESDAY'S VIDEO OF THE DAY</a>
+  <a href="#">WEDNESDAY'S VIDEO OF THE DAY</a>
+  <a href="#">THURSDAY'S VIDEO OF THE DAY</a>
+  <a href="#">FRIDAY'S VIDEO OF THE DAY</a>
+  <a href="#">CUTE/FUNNY PICTURES OF THE DAY</a>
+</div>
+
+<div class="content">
+  <h2> </h2>
+  <p></p>
+  
+  <h3>
+     <script type="text/javascript">
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+      
+         <img src="https://www.nyse.com/publicdocs/nyse/events/images/GirlsWhoCode_web_1920.png">
+  </h3>
+</div>
+  </body>
+</html>
