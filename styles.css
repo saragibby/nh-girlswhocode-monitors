@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat+Brush');
+body {
+  font-family: 'Amatic SC', cursive;
+    font-size: 25px; 
+ }
+h1 {
+  color:purple;
+  font-family: Caveat Brush, cursive;
+  
+    font-size: 53px;
+  }
+body {
+    background-color: lightblue;
+  }
+ul {
+  font-family: Caveat Brush, cursive;
+  color:black;
+  }
+ p {
+  color:black;
+  font-family: Caveat Brush, cursive;
+  font-size: 27px;
+}
+h2 {
+   font-family: Caveat Brush, cursive;
+  font-size: 40px;
+  text-decoration: underline;
+}  
+ h3 {
+   font-family: Caveat Brush, cursive;
+  font-size: 40px;
+  text-decoration: underline;
+}
+ 
+img {
+   width: 20%;
+    position: absolute;
+    bottom:730                                                                                                                                                                                                                                                                                                                                                   x;
+    right: 0px;
+    width: 300px;
+    
+  }
+h4 {
+  font-family: Caveat Brush, cursive;
+  color:black;
+  font-size: 41px;
+}
+
+p {
+  word-spacing: 350px;
+}
+
+p{
+  word-spacing: 350px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}

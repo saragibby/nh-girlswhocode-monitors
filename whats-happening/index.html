@@ -1,0 +1,69 @@
+
+<head>
+   <title>What's Happening</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+  
+  <h1>
+    What's Happening
+  </h1>
+  
+  <p>
+    -Seniors, Please check  the scholarship board that is in the sneior hall by the medias center, for information about outside scholarships. 
+  </p>
+    -Bagle Sale every Friday Mornings in the cafe. $1.25 for a bagel, $1.50 with cream cheese. 
+  <p>
+    -All seniors that are applying to Henery Ford Collage, Oakland County Community College, Okland Universtiy, Wayne County Community Collage District, and Wayne State University, please see Mrs. Melissa for scholarship opportunities.  
+  </p>
+    -Seniors, visit WWW.sashgraphics.com to order spirit wear 
+  <p>
+    -Seniors that live in Macomb Township, please see Mrs. Melissa for a scholarship oppurtunity. 
+  </p> 
+    -Japanese Culture Club is havng a bake sale on Feburary 14,2018. Prices will range from .25-.75 cents.
+  <p>
+    -Mid-Winter break is a half day on Friday, Feburary 16 and no school Monday Feburary 19th 
+  </p>
+  <p>
+    -No Pankow on Friday, Feburary 16th
+  </p>
+  <p>
+    -Boys Varisty/JV Basketball
+          -
+  </p>
+  <h4>
+   <script type="text/javascript">
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+
+       <img src="https://www.nyse.com/publicdocs/nyse/events/images/GirlsWhoCode_web_1920.png">
+
+  </h4>
+  
+</body>
