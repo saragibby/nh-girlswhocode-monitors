@@ -1,0 +1,31 @@
+body { 
+  background-color:#05630F;
+  font-family: Arial, Helvetica, sans-serif;           
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  border-radius: 39px;
+}
+li {
+    float: left;
+      display: block;
+    color:green;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  width: 17%;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10px;
+}
+p {
+  font-size: 35px;
+    text-align: center;
+  margin-top: 15px;
+}
