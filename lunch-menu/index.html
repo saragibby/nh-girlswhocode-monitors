@@ -1,96 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Cafe Luch Menu</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-         <h1>
-  Lunch Menu 
-    </h1>
- 
-<ul>
-  <li>
-    <h3>MONDAYS</h3>
-    <ul class="lunchunch">
-      <li> ASL Honor Society Club <br> Cochrill</li>
-      <li> BPA <br> Lisey </li>
-      <li>Clay Target Club <br> Parent Led</li>
-      <li>SADD <br> Divozzo <br> Rm.18</li>
-      <li> Select Ensemble <br> Hibbert </li>
-    </ul>
-  </li>
-  <li>
-    <h3>TUESDAYS</h3>
-    <ul class="clubs">  
-      <li> ASL Honor Society Club <br> Cochrill</li>
-      <li> HOSA <br> Vigneau </li>
-      <li> Girls Who Code <br> Parent Led Club </li>
-    </ul> 
- </li> 
-   <li>
-     <h3> WEDNESDAYS </h3>
-      <ul class="clubs">
-        <li> D and D <br> Wolfgram</li>
-        <li> Diversity Club <br> Mindy Johnson </li>
-        <li> Japanese Culture Club <br> Jarecki</li>
-        <li> Select Ensemble <br> Hibbert</li>
+
+<head>
+  <title>Cafe Luch Menu</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="LunchMenu.css">
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+  <h1>
+    Lunch Menu
+  </h1>
+
+  <ul>
+    <li>
+      <h3>MONDAYS</h3>
+      <ul class="lunch">
+        <li> mashed potatos and chicken bowl </li>
       </ul>
- </li>  
-  <li>
-    <h3> THURSDAYS </h3>
-      <ul class="clubs">
-        <li> SADD <br>Divozzo</li>
-        <li> Game Club <br> Hibbert</li>
+    </li>
+    <li>
+      <h3>TUESDAYS</h3>
+      <ul class="lunch">
+        <li> beef nachos</li>
+        <li> buffalo chicken pizza </li>
+        <li> popcorn chicken <br> </li>
       </ul>
- </li>
-   <li>
-     <h3> SATURDAY </h3>
-      <ul class="clubs">
-        <li> Clay Target Club <br>Parent Led</li>
+    </li>
+    <li>
+      <h3> WEDNESDAYS </h3>
+      <ul class="lunch">
+        <li> mac and cheese </li>
       </ul>
- </li>
-  
-</ul>
-  
+    </li>
+    <li>
+      <h3> THURSDAYS </h3>
+      <ul class="lunch">
+        <li> </li>
+        <li> </li>
+      </ul>
+    </li>
+    <li>
+      <h3> FRIDAY </h3>
+      <ul class="lunch">
+        <li> </li>
+      </ul>
+    </li>
 
+
+  </ul>
+    <div class="everyday">
+      
+      <h3>Everyday</h3>
+      <ul>
+         <li> cheese pizza <br> pepperoni pizza </li>
+        <li> classic chesseburger <br> spicy chicken sandwich </li>
+        <li> deli turkey sandwhich <br> sliced deli ham <br> salami </li>
+        <li> ham and turkey chef salad <br> tuna sandwhich </li>
+      </ul>
     
-  
-    <h4>
-   <script type="text/javascript">
-tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+  </div>
 
-function GetClock(){
-var d=new Date();
-var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-var nhour=d.getHours(),nmin=d.getMinutes(),ap;
-if(nhour==0){ap=" AM";nhour=12;}
-else if(nhour<12){ap=" AM";}
-else if(nhour==12){ap=" PM";}
-else if(nhour>12){ap=" PM";nhour-=12;}
 
-if(nmin<=9) nmin="0"+nmin;
 
-document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
-}
+  <h4>
+    <script type="text/javascript">
+      tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+      tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 
-window.onload=function(){
-GetClock();
-setInterval(GetClock,1000);
-}
-</script>
-<div id="clockbox"></div>
+      function GetClock() {
+        var d = new Date();
+        var nday = d.getDay(),
+          nmonth = d.getMonth(),
+          ndate = d.getDate(),
+          nyear = d.getFullYear();
+        var nhour = d.getHours(),
+          nmin = d.getMinutes(),
+          ap;
+        if (nhour == 0) {
+          ap = " AM";
+          nhour = 12;
+        } else if (nhour < 12) {
+          ap = " AM";
+        } else if (nhour == 12) {
+          ap = " PM";
+        } else if (nhour > 12) {
+          ap = " PM";
+          nhour -= 12;
+        }
 
-       <img src="https://www.nyse.com/publicdocs/nyse/events/images/GirlsWhoCode_web_1920.png">
+        if (nmin <= 9) nmin = "0" + nmin;
 
-    
-    
-    </h4> 
-  </body>
+        document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ap + "";
+      }
+
+      window.onload = function() {
+        GetClock();
+        setInterval(GetClock, 1000);
+      }
+    </script>
+    <div id="clockbox"></div>
+
+    <img src="https://www.nyse.com/publicdocs/nyse/events/images/GirlsWhoCode_web_1920.png">
+
+
+
+  </h4>
+</body>
+
 </html>
-

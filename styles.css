@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat+Brush');
 body {
-  font-family: 'Amatic SC', cursive;
     font-size: 25px; 
  }
 h1 {
   color:purple;
-  font-family: Caveat Brush, cursive;
   
     font-size: 53px;
   }
@@ -13,21 +11,17 @@ body {
     background-color: lightblue;
   }
 ul {
-  font-family: Caveat Brush, cursive;
   color:black;
   }
  p {
   color:black;
-  font-family: Caveat Brush, cursive;
   font-size: 27px;
 }
 h2 {
-   font-family: Caveat Brush, cursive;
   font-size: 40px;
   text-decoration: underline;
 }  
  h3 {
-   font-family: Caveat Brush, cursive;
   font-size: 40px;
   text-decoration: underline;
 }
@@ -41,7 +35,6 @@ img {
     
   }
 h4 {
-  font-family: Caveat Brush, cursive;
   color:black;
   font-size: 41px;
 }
