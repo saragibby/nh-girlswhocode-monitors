@@ -1,50 +1,71 @@
-body { 
-  background-color:#05630F;
-  font-family: Arial, Helvetica, sans-serif;           
+body {
+  background-color: #05630F;
+  font-family: Arial, Helvetica, sans-serif;
 }
-       
-p, ul, h1, #clockbox {
+
+p,
+ul,
+h1,
+#clockbox {
   color: white;
 }
+
 #clockbox {
   position: absolute;
   top: 0;
 }
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
   border-radius: 39px;
+  font-size: 15px;
 }
-ul.lunch-menu li{width: 100%}
+
+ul li {
+  width: 20%;
+  float: left;
+}
+
+ul.clubs li {
+  width: 85%;
+  float: none;
+}
+
 li {
-    float: left;
-      display: block;
-    color:green;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  width: 17%;
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
+
 h1 {
   text-align: center;
   font-size: 50px;
-  margin-top: 10px;
+  margin-top: 35px;
+  margin-bottom: 0;
 }
+
 p {
   font-size: 35px;
-    text-align: center;
+  text-align: center;
   margin-top: 15px;
 }
-img {width: 250px;}
+
+img {
+  width: 140px;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+}
 
 li h3 {
   text-align: center;
   width: 100%;
   text-decoration: underline;
+  margin-bottom: 0px;
 }
-
-
-

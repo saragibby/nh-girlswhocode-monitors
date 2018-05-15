@@ -1,31 +1,28 @@
-#Drinks {
-    float: left;
-height:400px;
-width:300px;
+body {
+  text-align: center;
 }
-#Snacks {
-  float: left;
- height:400px;
- width:600px;
+
+#Drinks, #Snacks {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: -50px;
 }
 
 h3 {
   margin-bottom: 10px;
 }
 
-p { 
-  margin:10px;
-  word-spacing:0;
+p {
+  margin: 10px;
+  word-spacing: 0;
+}
 
-}
 ul {
-  margin:-5px;
-} 
-#floof {
-margin-top:100px;
+  margin: -5px;
 }
+
 img {
-  position :relative;
+  position: relative;
   width: 50%;
 }
-

@@ -1,41 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat+Brush');
 body {
-    font-size: 25px; 
- }
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
-  color:purple;
-  
-    font-size: 53px;
-  }
+  color: purple;
+  font-size: 53px;
+}
+
 body {
-    background-color: lightblue;
-  }
+  background-color: lightblue;
+}
+
 ul {
-  color:black;
-  }
- p {
-  color:black;
+  color: black;
+}
+
+p {
+  color: black;
   font-size: 27px;
 }
+
 h2 {
   font-size: 40px;
   text-decoration: underline;
-}  
- h3 {
+}
+
+h3 {
   font-size: 40px;
   text-decoration: underline;
 }
- 
+
 img {
-   width: 20%;
-    position: absolute;
-    bottom:730                                                                                                                                                                                                                                                                                                                                                   x;
-    right: 0px;
-    width: 300px;
-    
-  }
+  width: 20%;
+  position: absolute;
+  bottom: 730 x;
+  right: 0px;
+  width: 300px;
+}
+
 h4 {
-  color:black;
+  color: black;
   font-size: 41px;
 }
 
@@ -43,19 +49,27 @@ p {
   word-spacing: 350px;
 }
 
-p{
+p {
   word-spacing: 350px;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: #2196F3;
   padding: 10px;
 }
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+#clockbox {
+  position: absolute;
+  top: 10px;
+  font-size: 20px;
 }

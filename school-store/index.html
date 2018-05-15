@@ -18,81 +18,79 @@
     Stop in to get the latest Rocket gear, accessories, and snacks!
     <br> Come see us during both A and B lunches.
   </p>
-<div>
-  
-  
-      <h3>Rocket Gear</h3>
-      <ul>
-        <li> Sweatshirts </li>
-        <li> Hoodies</li>
-        <li> Sweatpants </li>
-        <li> Shorts </li>
-        <li> T-Shirts</li>
-      </ul>
-    </div>
-    <div>
-      
-  
-      <h3>Accessories</h3>
-      <ul>
-        <li> Keychains </li>
-        <li> Lanyards </li>
-        <li> Pencils </li>
-      </ul>
-    </div>
-    <div>
-      
-  
-      <h3>Snacks
-      </h3>
-      <ul>
-        <li> Drinks </li>
-        <li> Chips </li>
-        <li> Candy </li>
-      </ul>
-    </div>
-    </div>
-    <h4>
-      <script type="text/javascript">
-        tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
-        tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+  <div>
 
-        function GetClock() {
-          var d = new Date();
-          var nday = d.getDay(),
-            nmonth = d.getMonth(),
-            ndate = d.getDate(),
-            nyear = d.getFullYear();
-          var nhour = d.getHours(),
-            nmin = d.getMinutes(),
-            ap;
-          if (nhour == 0) {
-            ap = " AM";
-            nhour = 12;
-          } else if (nhour < 12) {
-            ap = " AM";
-          } else if (nhour == 12) {
-            ap = " PM";
-          } else if (nhour > 12) {
-            ap = " PM";
-            nhour -= 12;
-          }
+    <ul>
+      <li>
+        <h3>Rocket Gear</h3>
+        <ul class="items">
 
-          if (nmin <= 9) nmin = "0" + nmin;
+          <li> Sweatshirts </li>
+          <li> Hoodies</li>
+          <li> Sweatpants </li>
+          <li> Shorts </li>
+          <li> T-Shirts</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Accessories</h3>
+        <ul class="items">
+          <li> Keychains </li>
+          <li> Lanyards </li>
+          <li> Pencils </li>
+        </ul>
+      </li>
+      <li>
+        <h3>Snacks</h3>
+        <ul class="items">
+          <li> Drinks </li>
+          <li> Chips </li>
+          <li> Candy </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <h4>
+    <script type="text/javascript">
+      tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+      tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 
-          document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ap + "";
+      function GetClock() {
+        var d = new Date();
+        var nday = d.getDay(),
+          nmonth = d.getMonth(),
+          ndate = d.getDate(),
+          nyear = d.getFullYear();
+        var nhour = d.getHours(),
+          nmin = d.getMinutes(),
+          ap;
+        if (nhour == 0) {
+          ap = " AM";
+          nhour = 12;
+        } else if (nhour < 12) {
+          ap = " AM";
+        } else if (nhour == 12) {
+          ap = " PM";
+        } else if (nhour > 12) {
+          ap = " PM";
+          nhour -= 12;
         }
 
-        window.onload = function() {
-          GetClock();
-          setInterval(GetClock, 1000);
-        }
-      </script>
-      <div id="clockbox"></div>
+        if (nmin <= 9) nmin = "0" + nmin;
 
-      <img src="https://www.nyse.com/publicdocs/nyse/events/images/GirlsWhoCode_web_1920.png">
+        document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ap + "";
+      }
 
-    </h4>
+      window.onload = function() {
+        GetClock();
+        setInterval(GetClock, 1000);
+      }
+    </script>
+    <div id="clockbox"></div>
+
+    <img src="https://www.nyse.com/publicdocs/nyse/events/images/GirlsWhoCode_web_1920.png">
+
+  </h4>
 </body>
 
 </html>

@@ -36,9 +36,9 @@ li {
   display: block;
   color: green;
   text-align: center;
-  padding: 16px;
+  padding: 5px 16px;
   text-decoration: none;
-  width: 17%;
+  width: 16%;
   font-size: 15px;
 }
 
@@ -55,9 +55,9 @@ p {
 }
 
 img {
-  width: 250px;
+  width: 140px;
   position: absolute;
-  top: -22px;
+  top: -10px;
   right: 0px;
 }
 
@@ -65,12 +65,14 @@ h3 {
   text-align: center;
   width: 100%;
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 18px;
+  margin-top: 0px;
 }
 
 .everyday {
   background-color: white;
   border-radius: 39px;
+  margin-top: 15px;
 }
 
 .everyday h3 {
