@@ -10,12 +10,6 @@ h1,
   color: white;
 }
 
-#clockbox {
-  position: absolute;
-  top: 0;
-  font-size: 20px;
-}
-
 ul {
   list-style-type: none;
   margin: 0;

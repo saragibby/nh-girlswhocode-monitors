@@ -1,0 +1,14 @@
+body{
+background-color:#1D1D19;
+}
+h1{color:#B7A245;
+text-align:center;}
+#clockbox
+{color: #B7A245;
+position:absolute;
+bottom:10px;}
+img{
+  position:absolute;
+  bottom:10px;
+  width:200px
+}

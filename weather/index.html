@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Weather</title>
+  <link rel="stylesheet" type="text/css" href="weather-styles.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script src="weather-scripts.js"></script>
+</head>
+
+<body>
+  <!-- URL format:index.html?zip_code=10001&date=12/31/2016 (date within 10 days of current date) -->
+  <div id="threeday">
+    <h2 class="location"></h2>
+    <div id="forecast">
+      <ul id="days"></ul>
+    </div>
+  </div>
+  
+  <div id="satellite">
+  </div>
+</body>
+
+</html>
