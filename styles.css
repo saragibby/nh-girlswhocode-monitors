@@ -2,15 +2,12 @@
 body {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: lightblue;
 }
 
 h1 {
   color: purple;
   font-size: 53px;
-}
-
-body {
-  background-color: lightblue;
 }
 
 ul {
@@ -43,10 +40,6 @@ img {
 h4 {
   color: black;
   font-size: 41px;
-}
-
-p {
-  word-spacing: 350px;
 }
 
 p {

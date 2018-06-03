@@ -9,6 +9,8 @@ var currentDate = new Date(current_y, current_m, current_d);
 
 var futureDays = 4;
 
+var forecastHours = 10;
+
 $(function() {
   $.ajax({
     url: "http://api.wunderground.com/api/e59e22a429ff575b/geolookup/forecast10day/q/US/" + zip_code + ".json",
@@ -37,6 +39,27 @@ $(function() {
       $('#days').html(htmlString);
     }
   });
+  
+  $.ajax({
+    url: "http://api.wunderground.com/api/e59e22a429ff575b/geolookup/hourly/q/US/" + zip_code + ".json",
+    dataType: "jsonp",
+    success: function(data) {
+      var htmlString = '';
+      var locale = data.hourly_forecast;
+
+      for (index = 0; index <= forecastHours; index++) {
+                    console.log(locale[index]);
+        divElement = '<li>' + '<div class="hour">' + locale[index].FCTTIME.civil +
+          ':</div>' + '<div class="icon"><img src="' +
+          locale[index].icon_url + '" /></div>' + '<div class="conditions">' +
+          locale[index].condition + '</div>' + '<b>' +
+          locale[index].temp.english + '&deg; F</b>' + '<div class="clear_left"></div></li>';
+
+        htmlString += divElement;
+      }
+      $('#hourly').html(htmlString);
+    }
+  });
 
   $.ajax({
     url: "http://api.wunderground.com/api/e59e22a429ff575b/satellite/q/MI/New_Haven.json",
@@ -51,4 +74,4 @@ $(function() {
 
 setTimeout(function(){
    window.location.reload(1);
-}, 30000);
+}, 100000);

@@ -1,65 +1,21 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-  <title>Cafe Menu</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="stylesheet" href="cafe-styles.css">
-  <script src="/script.js" defer></script>
+  <link rel="stylesheet" href="schoolschedule.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.0/fullcalendar.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.0/fullcalendar.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.2.2/ical.min.js"></script>
+  <script type="text/javascript" src="../dist/fc-remote-ical.umd.min.js"></script>
+  <script type="text/javascript" src="schedule.js"></script>
 </head>
 
 <body>
-
-  <div id="menu-image">
-    <img src="/Images/cafe-menu.png" />
-  </div>
-  <div id=boof>
-<img src="/Images/COFFEE.png"
-  </div>
-  <div id="Drinks">
-    <h3>
-      Drinks
-    </h3>
-    <p>
-      Frappe - $1.50
-    </p>
-    <ul>
-      
-    </ul>
-    <p>
-      Cappacinos - $1.00
-    </p>
-
-    <p>
-      Slushies - $1.00
-    </p>
-  </div>
-
-  <div id="Snacks">
-    <h3>
-      Snacks
-    </h3>
-    <p>
-      Rice Krispies - $0.50
-    </p>
-    <p>
-      Chex - $0.50
-    </p>
-    <p>
-      Chips - $1.00
-    </p>
-
-    <ul>
-     
-    </ul>
-  </div>
-  <div id="girls">
-     <img src="https://www.nyse.com/publicdocs/nyse/events/images/GirlsWhoCode_web_1920.png">
-  </div>
- 
-  <div id="clockbox"></div>
-
-
+  <h1>
+    NHHS Schedule
+  </h1>
 
   <script type="text/javascript">
     tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
@@ -96,4 +52,8 @@
       setInterval(GetClock, 1000);
     }
   </script>
+  <div id="clockbox"></div>
+  <img src="https://www.nyse.com/publicdocs/nyse/events/images/GirlsWhoCode_web_1920.png">
 </body>
+
+</html>

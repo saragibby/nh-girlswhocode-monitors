@@ -1,0 +1,106 @@
+body {
+  background-color: #05630F;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p,
+ul,
+h1,
+#clockbox {
+  color: white;
+}
+
+#clockbox {
+  position: absolute;
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 39px;
+  height: 367px;
+}
+ul li {
+  width: 20%;
+  float: left;
+}
+
+ul.daily-announcements li {
+  width: 85%
+  float: none
+}
+
+li {
+ 
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 35px;
+  text-align: center;
+  margin-top: -33px;  
+ 
+}
+
+img {
+  width: 250px;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+}
+
+ul{
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  text-decoration: underline;
+  margin-bottom: 0px
+}
+
+h3 {
+  text-align: center;
+  width: 100%;
+  text-decoration: underline;
+  margin-bottom: 0px
+}
+
+ h4{
+  text-align: center;
+  width: 100%;
+  text-decoration: underline;
+  margin-bottom: 0px
+}
+
+h5 {
+  text-align: center;
+  width: 100%;
+  text-decoration: underline;
+  margin-bottom: 0px
+}
+
+h6{
+  text-align: center;
+  width: 100%;
+  text-decoration: underline;
+  margin-bottom: 0px
+}
+class.daily-announcement{
+  text-align: center;
+}

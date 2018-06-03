@@ -1,5 +1,5 @@
 body {
-  background-color: #05630F;
+  background-color: #161616;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,7 +7,7 @@ p,
 ul,
 h1,
 #clockbox {
-  color: white;
+  color: #83DB00;
 }
 
 ul {
@@ -15,7 +15,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: #83DB00;
   border-radius: 39px;
 }
 
@@ -28,7 +28,7 @@ ul.lunch li,
 li {
   float: left;
   display: block;
-  color: green;
+  color: white;
   text-align: center;
   padding: 5px 16px;
   text-decoration: none;
@@ -71,4 +71,8 @@ h3 {
 
 .everyday h3 {
   color: green;
+}
+
+img src {
+  right: 50px:
 }
