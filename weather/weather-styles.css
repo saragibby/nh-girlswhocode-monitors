@@ -12,11 +12,30 @@ body {
   padding: 10px;
 }
 
-#satellite {
-  width: 250px;
-  position: absolute;
-  bottom: -10px;
-  right: 0px;
+h3 {
+  font-size: 20px;
 }
 
+#days li {
+  font-size: 17px;
+}
+
+#satellite {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+
+#girls-who-code {
+  position: absolute;
+  width: 175px;
+  top: -10px;
+  right: -5px;
+}
+
+#clockbox {
+  position: absolute;
+  bottom: 40px;
+  font-size: 15px;
+  left: 15px;
 }

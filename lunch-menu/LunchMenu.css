@@ -15,8 +15,9 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #83DB00;
+  background-color: #fff;
   border-radius: 39px;
+  padding-bottom: 5px;
 }
 
 ul.lunch li,
@@ -28,7 +29,7 @@ ul.lunch li,
 li {
   float: left;
   display: block;
-  color: white;
+  color: green;
   text-align: center;
   padding: 5px 16px;
   text-decoration: none;
@@ -60,19 +61,23 @@ h3 {
   width: 100%;
   text-decoration: underline;
   font-size: 18px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .everyday {
   background-color: white;
   border-radius: 39px;
   margin-top: 15px;
+  padding-bottom: 10px;
 }
 
 .everyday h3 {
   color: green;
+  padding-top: 10px;
 }
 
-img src {
-  right: 50px:
+#rockets img {
+  position: relative;
+  top: -150px;
+  width: 235px;
 }

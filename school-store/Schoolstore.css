@@ -5,12 +5,12 @@ body {
 
 #clockbox {
   color: white;
-}
-
-#clockbox {
   position: absolute;
-  top: 0;
+  top: 10px;
   font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
 }
 
 ul {
@@ -28,6 +28,7 @@ li {
   text-align: center;
   padding: 16px;
   text-decoration: none;
+  vertical-align: top;
 }
 
 h1 {
@@ -48,10 +49,10 @@ ul.categories li {
   display: inline-block;
 }
 
-#GWC {
-  width: 250px;
+#GWC img {
+  width: 175px;
   position: absolute;
-  top: -22px;
+  top: -12px;
   right: 0px;
 }
 
@@ -59,27 +60,25 @@ ul.items li {
   display: block;
 }
 
-#clockbox {
-  display: inline-block;
-  width: 100%;
-  text-align: left
-}
 #RocketGear {
   display: inline-block;
   width: 100%;
   text-align: center
 }
+
 #clothing img {
-    width: 300px;
-    position: absolute;
-    top: 312px;
-    right: 97px;
-    transform: rotate(25deg);
+  width: 270px;
+  position: absolute;
+  top: 293px;
+  right: 46px;
+  transform: rotate(25deg);
+  border-radius: 10px;
 }
+
 #clothing2 img {
-    width: 300px;
-    position: absolute;
-    top: 312px;
-    right: 900px:
-    transform: rotate(25deg);
+  width: 231px;
+  position: absolute;
+  top: 250px;
+  left: 38px;
+  border-radius: 10px;
 }

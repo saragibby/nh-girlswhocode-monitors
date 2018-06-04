@@ -26,8 +26,8 @@ $(function() {
           var day = locale[index].date.weekday;
         };
         divElement = '<li>' + '<div class="day">' + day +
-          ':</div>' + '<div class="icon"><img src="http://icons.wxug.com/i/c/g/' +
-          locale[index].icon + '.gif" /></div>' + '<div class="conditions">' +
+          ':</div>' + '<div class="icon"><img src="' +
+          locale[index].icon_url + '" /></div>' + '<div class="conditions">' +
           locale[index].conditions + '</div>' + '<b>' +
           locale[index].high.fahrenheit + '&deg;</b>' + ' / ' +
           locale[index].low.fahrenheit + '&deg;' + ' F' + '<div class="clear_left"></div></li>';

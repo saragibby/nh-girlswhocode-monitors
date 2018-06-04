@@ -5,27 +5,60 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Weather</title>
   <link rel="stylesheet" type="text/css" href="weather-styles.css" />
-
-  
-  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
   <script src="weather-scripts.js"></script>
 </head>
 
 <body>
-  <!-- URL format:index.html?zip_code=10001&date=12/31/2016 (date within 10 days of current date) -->
   <div id="threeday">
     <h2 class="location"></h2>
     <h3> Hourly </h3>
     <div id="forecast">
       <ul id="hourly"></ul>
-           <h3> Daily </h3>
+      <h3> Daily </h3>
       <ul id="days"></ul>
-
     </div>
   </div>
 
   <div id="satellite"></div>
+  <img id="girls-who-code" src="https://www.nyse.com/publicdocs/nyse/events/images/GirlsWhoCode_web_1920.png">
+
+  <script type="text/javascript">
+    tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+    tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+    function GetClock() {
+      var d = new Date();
+      var nday = d.getDay(),
+        nmonth = d.getMonth(),
+        ndate = d.getDate(),
+        nyear = d.getFullYear();
+      var nhour = d.getHours(),
+        nmin = d.getMinutes(),
+        ap;
+      if (nhour == 0) {
+        ap = " AM";
+        nhour = 12;
+      } else if (nhour < 12) {
+        ap = " AM";
+      } else if (nhour == 12) {
+        ap = " PM";
+      } else if (nhour > 12) {
+        ap = " PM";
+        nhour -= 12;
+      }
+
+      if (nmin <= 9) nmin = "0" + nmin;
+
+      document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ap + "";
+    }
+
+    window.onload = function() {
+      GetClock();
+      setInterval(GetClock, 1000);
+    }
+  </script>
+  <div id="clockbox"></div>
 </body>
 
 </html>
